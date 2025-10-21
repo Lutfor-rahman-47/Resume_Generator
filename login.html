@@ -17,7 +17,7 @@
     
     <button class="btn btn-success w-100" onclick="login()">Login</button>
     <p class="text-center mt-3">Don't have an account?
-      <a href="signup.html">Sign Up</a>
+      <a href="index.html">Sign Up</a>
     </p>
   </div>
 </div>
@@ -38,7 +38,7 @@ function login() {
   if(user.password === password){
     localStorage.setItem('loggedInUser', username);
     alert("Login successful!");
-    window.location.href = "index.html";
+    window.location.href = "main.html";
   } else {
     alert("Incorrect password!");
   }
@@ -47,3 +47,4 @@ function login() {
 
 </body>
 </html>
+
