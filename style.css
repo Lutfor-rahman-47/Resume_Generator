@@ -1,0 +1,322 @@
+
+.my-img{
+    border-radius: 50%;
+}
+
+#cv-form{
+    padding: 20px;
+    background-color:lightblue;
+}
+#cv-template{
+    padding: 20px;
+    background-color:lightcyan;
+}
+
+#cv-title{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: deeppink;
+    transition: color 0.3s;
+}
+
+#cv-title{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: deeppink;
+}
+ /*Hide the cv template initially*/
+#cv-template{
+    display: none;
+}
+#fullNameLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#fullName{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    
+    border-radius: 10px;
+}
+#contactFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#phoneNumber{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#emailFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#emailAddress{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#addressFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#contactField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#SPHOTO
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#imgField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#fbFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#fbField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#linkedinFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#linkedinField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#githubFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#githubField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#InstagramFieldLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#InstagramField{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#ObjectiveLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#Objective{
+    font-size: 20px;
+    font-weight: bold;
+    color:brown;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+#workExperienceLabel
+/*{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#workExperience{
+    font-size: 20px;
+    font-weight: bold;
+    color:brown;
+    box-shadow: inset;
+    border-radius: 10px;
+}*/
+
+#we{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+
+}
+
+th{
+    background-color: lightblue;
+    color: darkblue;
+    border-radius: 10px;
+    border-color: darkblue;
+    border-spacing: 7px;
+
+}
+#sLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+
+#degreeSelect{
+  
+  height: 40px;
+  font-size: 14px;
+  padding: 2px 6px;
+  width: 100px;
+}
+
+
+
+
+/*This is the background of cv-template*/
+
+.card-header{
+
+    color:blue;
+     font-size: 25px;
+    font-weight: bold;
+    color:blue;
+
+}
+#wel{
+     color:blue;
+     font-size: 35px;
+    font-weight: bold;
+}
+
+h3{
+    color:blue;
+     font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+
+
+#eqLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#eq{
+    font-size: 20px;
+    font-weight: bold;
+    color:blue;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+/*
+#sLabel
+{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+#skills{
+    font-size: 20px;
+    font-weight: bold;
+    color:brown;
+    box-shadow: inset;
+    border-radius: 10px;
+}
+
+#eqLabel{
+    font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+.card-body{
+    
+    color:chartreuse;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#objectiveT{
+    color:green
+    
+}
+#weT{
+    color:green
+
+}
+#eqT{
+     color: green;
+}
+#sT{
+    color:green
+}
+   
+#aq{
+     font-size: 25px;
+    font-weight: bold;
+    color:blue;
+}
+
+#degreeSelect{
+    border-radius: 10px;
+
+  color: dodgerblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Optional: for smooth transition */   
+*/
+#gpaInput{
+  border-radius: 10px;
+  color: dodgerblue;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Optional: for smooth transition */
+    
+}
+.btn{
+    font-size: 20px;
+    font-weight: bold;
+    color:chartreuse;
+    box-shadow: inset;
+    border-radius: 10px;
+    background-color: blue;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container" id="cv-form">
+        <h1 class="text-center my-4" id="cv-title">Automatic Resume Generator</h1>
+        <div class="row">
+            <!--overall form-->
+
+
+            <div class="col-md-6">
+               <!-- first column -->
+                <h3>Personal Information</h3>
+                 
+                <div class="form-group">
+                    <label for="fullName" id="fullNameLabel">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="contactField" id="contactFieldLabel">Phone number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="emailField" id="emailFieldLabel">Email address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" required>
+                </div>   
+
+                <div class="form-group mt-2">
+                    <label for="addressField" id="addressFieldLabel">Enter your Address</label>
+                    <textarea class="form-control" id="contactField" placeholder="Enter your address" required></textarea>
+                    </textarea>
+                </div>
+                
+                <div class="from-group">
+                    <label for="form-control"id="SPHOTO">Select Your Photo</label>
+                    <input type="file" class="form-control mt-2" id="imgField" accept="image/*">
+
+                </div>
+                 <div class="form-group mt-2">
+                    <label for="fbField" id="fbFieldLabel">Facebook Profile</label>
+                    <input type="text" class="form-control" id="fbField" placeholder="Enter your Facebook profile link">
+                 </div>
+                 <div class="form-group mt-2">
+                    <label for="linkedinField" id="linkedinFieldLabel">LinkedIn Profile</label>
+                    <input type="text" class="form-control" id="linkedinField" placeholder="Enter your LinkedIn profile link"required>
+                 </div>
+
+                 <div class="form-group mt-2">
+                    <label for="githubField" id="githubFieldLabel">GitHub Profile</label>
+                    <input type="text" class="form-control" id="githubField" placeholder="Enter your GitHub profile link"required>
+                 </div>
+                 <div class="form-group mt-2">
+                    <label for="InstagramField" id="InstagramFieldLabel">Instagram Profile</label>
+                    <input type="text" class="form-control" id="InstagramField" placeholder="Enter your Instagram profile link">
+                 </div>
+
+
+            </div>
+
+            <div class="col-md-6">
+               <!-- second column -->
+                <h3>Professional Summary</h3>
+               <div class="form-group mt-2">
+                <label for="Objective" id="ObjectiveLabel">Objective</label>
+                <textarea class="form-control" placeholder="Enter your objective" id="Objective" required>
+                </textarea>
+               </div>
+
+               <!--<div class="form-group mt-2" id="we">
+                <label for="workExperience" id="workExperienceLabel">Work Experience</label>
+                <textarea class="form-control weField" placeholder="Enter your work experience" id="workExperience" required>
+                </textarea>
+                <div class="container text-center mt-2" id="weAddButton">
+                    <button onclick="addWorkExperience()" class="btn btn-primary">Add</button>
+                   
+                </div>
+
+                </div>-->
+                <!-- ============== WORK EXPERIENCE ============== -->
+        <div class="mt-4">
+          <h4 class="text-primary" id="we">Work Experience</h4>
+          <table class="table table-bordered mt-2 text-center align-middle" id="workTable">
+            <thead class="table-primary">
+              <tr>
+                <th>Job Title</th>
+                <th>Joining Date</th>
+                <th>Leaving Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <div class="row g-2">
+            <div class="col-md-4"><input type="text" id="jobTitle" class="form-control text-success fw-bold" placeholder="Job Title"></div>
+            <div class="col-md-3"><input type="date" id="joinDate" class="form-control text-success fw-bold"></div>
+            <div class="col-md-3"><input type="date" id="leaveDate" class="form-control text-success fw-bold"></div>
+            <div class="col-md-2 d-grid"><button type="button" class="btn btn-primary" onclick="addWork()">Add</button></div>
+          </div>
+        </div>
+                
+              <!-- <div class="form-group mt-2"id="eq">
+                <label for="Academic Qualifications" id="eqLabel">Academic Qualifications</label>
+                <textarea class="form-control eqField" placeholder="Enter your" id="AcademicQualifications" required>
+                </textarea>
+                <div class="container text-center mt-2" id="eqAddButton">
+                    <button onclick="addAcademicQualification()" class="btn btn-primary">Add</button> 
+                </div>
+                </div>-->
+
+                    <!-- ============== ACADEMIC QUALIFICATION ============== -->
+        <div class="mt-4">
+          <h4 class="text-primary" id="aq">Academic Qualifications</h4>
+          <table class="table table-bordered mt-2 text-center align-middle" id="eduTable">
+            <thead class="table-primary">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institute / Board</th>
+                      <th>Group / Subject</th>
+                       <th>Passing Year</th>
+                       <th>Result</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <div class="row g-1">
+            <div class="col-md-2">
+              <select id="degreeSelect" class="form-select">
+                <option value="SSC"class="btn-sm">SSC</option>
+                <option value="HSC">HSC</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="M.Sc">M.Sc</option>
+              </select>
+            </div>
+                <div class="col-md-2"><input type="text" id="instituteInput" class="form-control" placeholder="Institute / Board"></div>
+               <div class="col-md-2"><input type="text" id="subjectInput" class="form-control" placeholder="Group / Subject"></div>
+               <div class="col-md-2"><input type="text" id="yearInput" class="form-control" placeholder="Passing Year"></div>
+               <div class="col-md-2"><input type="text" id="gpaInput" class="form-control" placeholder="GPA (e.g. 4.90/5)"></div>
+                 <div class="col-md-1">
+                    <select id="scaleSelect" class="form-select">
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+                   </select>
+                 </div>
+               <div class="col-md-1 d-grid"><button type="button" class="btn btn-primary" onclick="addEducation()">Add</button></div>
+
+          </div>
+        </div>
+
+
+                <div class="form-group mt-2" id="s">
+                    <label for="Skills" id="sLabel">Skills</label>
+                    <textarea class="form-control skillsField" placeholder="Enter your skills" id="skills" required>
+                    </textarea>
+                    <div class="container text-center mt-2" id="sAddButton">
+                        <button onclick="addSkills()" class="btn btn-primary">Add</button>
+                </div>
+
+                </div>
+
+                <div class="container text-center mt-3">
+                  <button onclick="generateResume()" class="btn btn-primary btn-lg">Generate Resume</button>
+
+                </div>
+            
+        
+            </div>
+        </div>
+
+    </div>
+    <!--cv-template--> 
+
+<div class="container" id="cv-template">
+    <p id="cv-title">Resume</p>
+       <div class="row">
+           <div class="col-md-5 text-center mt-2 background">
+            <!--first-column-->
+            <img src="DefaultProfile.webp" alt="" class="img-fluid my-img" style="height: 200px; width:200px;"id="imgT">
+                <div class="container">
+                    <p id="nameT">Md. Lutfor Rahaman</p>
+                    <p id="contactT">01735637626</p>
+                    <p id="emailT">lutforrahaman594@gmail.com</p>
+                    <p id="addressT" >Tangail,Dhaka, Bangladesh</p>
+                </div>
+                  <p>
+                    <a id="fbT" href="#1">https://www.facebook.com//Lutfor Rahman </a>
+                  </p>
+                  <p>
+                    <a id="instaT" href="#2">https://www.instagram.com//Lutfor Rahman </a>
+                  </p>
+                  <p>
+                    <a id="linkedinT" href="#3">https://www.linkedin.com//Lutfor Rahaman</a>
+                  </p>
+
+           </div>
+
+           <div class="col-md-7">
+            <!--second-column-->
+              <h1 id="nameT2" class="text-center my-4"style="font-size: 30px; font-weight: bold;">
+                Md. Lutfor Rahaman
+              </h1>
+
+              <!--objective-->
+              <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Objective</h3>
+                </div>
+                <div class="card-body">
+                    <p id="objectiveT">To work in a challenging environment that encourages me to learn new skills, and to enhance my knowledge, and to utilize my skills for the growth of the organization.</p>
+                </div>
+              </div>
+
+               <!--work experience-->
+             <!--  <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="card-body">
+                   <ul id="weT">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+
+                   </ul>
+                </div>
+              </div>-->
+
+       <!-- <div class="card mb-3">
+
+          <div class="card-header bg-primary text-white">Work Experience</div>
+          <div class="card-body">
+           
+          </div>
+        </div>-->
+        <!-- Work Experience Table -->
+
+        <!--console.log(jobTitle)-->
+         <div class="card mb-3 mt-3">
+              <h3>Work Experience</h3>
+             <div class="card-body" id="workTemplate"></div>
+         </div>
+
+
+
+
+
+
+                <!--academic qualifications-->
+          <!--     <div class="card mt-4">
+                <div class="card-header">
+                    <h3 id="eqLabel">Academic Qualifications</h3>
+                </div>
+                <div class="card-body">
+                     <ul id="eqT">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    
+                   </ul>
+                </div>
+              </div>-->
+              
+              <!-- Academic Qualifications -->
+
+<div class="card mt-4">
+  <div class="card-header text-white">
+    <h3>Academic Qualifications</h3>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered text-center align-middle" id="eduTableTemplate">
+      <thead class="table-primary">
+        <tr>
+          <th>Degree</th>
+          <th>Institute / Board</th>
+          <th>Group / Subject</th>
+          <th>Passing Year</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SSC</td>
+          <td>5.00</td>
+        </tr>
+        <tr>
+          <td>HSC</td>
+          <td>4.90</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+              <div class="card mt-4">
+                <div class="card-header">
+                    <h3>skills</h3>
+                </div>
+                <div class="card-body">
+                   <ul id="sT">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+
+                   </ul>
+                </div>
+              </div>
+             <div class="container mt-3 text-center">
+                <button onclick="downloadCV()" class="btn background">Download CV</button>
+
+              </div>
+
+           </div>
+
+       </div>
+        
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+</body>
+</html>
